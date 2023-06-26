@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+*{
+    font-family: "Ovo";
+    transition: 0.2s;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    
+}
+
+section{
+    min-width: 100%;
+    height: 100vh;
+}
+
+
+/* head */
+.head{
+    margin-left: -5px;
+    top: 0;
+    min-width: 100%;
+    height: 60px;
+    min-width: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	position: fixed;
+	background: #FFF;
+    z-index: 100;
+}
+
+.head .logo a{
+    position: absolute;
+    padding-left: 20px;
+    padding-top: 18px;
+    font-size: 20px;
+    color:#3B4947;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+
+.head .nav{
+    display: flex;
+    font-size: 16px;
+    font-weight: 0;
+    justify-content: center;
+    padding-top: 20px;
+}
+.head .nav a{
+    text-decoration: none;
+    margin-left: 70px;
+    color: #000;
+}
+.head .nav a:hover{
+    border-bottom: 1px solid  rgb(172, 203, 167);;
+    padding-bottom: 8px;
+    color: rgb(172, 203, 167);
+	
+}
+.logo a:hover{
+    color: rgb(172, 203, 167);
+} 
+
+.head .icons{
+    color:#3B4947;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 90%;
+    margin-top: -20px;
+    
+}
+.head .icons #profile{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.head .icons div:hover{
+    color: rgb(172, 203, 167);
+    transform: scale(1.2);
+}
+
+#menu-btn{
+    display: none;
+}
+.head .search-form{
+    position: absolute;
+    top:115%; right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 0.5px solid #3B4947;
+}
+
+.head .search-form.active{
+    transform: scaleY(1);
+    
+}
+
+.head .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color:#3B4947;
+    padding:1rem;
+    text-transform: none;
+    border: none;
+    background: #FFF;
+
+}
+
+.head .search-form label{
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color:rgb(172, 203, 167);
+    border: none;
+}
+
+/* Special */
+.body-special{
+	max-width: 100%;
+	height: 100%;
+	background-image: url(/assets/img/bg2.jpeg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;	
+    margin-top: 70px;
+}
+
+.title-special{
+    font-weight: 100; 
+    text-align: center;
+    font-size: 45px;
+    padding-top: 30px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1.1fr));
+    gap: 50px;
+    margin: 0 100px;
+    padding-top: 40px;    
+}
+
+
+
+.item{
+    box-sizing:border-box;
+    height: 400px;
+    width: 300px;
+    background-color: #FFF;
+    border-radius: 15px;
+    border: solid 0.5px #3B4947;
+    padding: 30px 0 20px 0;
+    text-align: center;
+}
+.item img{
+    height:250px;
+    width: 250px;
+    
+}
+.item span{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: -10px;
+}
+.item button{
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    margin-top: 7px;
+}
+.price{
+    color:#55706A;
+    font-size: 16px;
+}
+
+.plus{
+    background: #87A8A2;
+}
+.buy-now{
+    background: #55706A;
+}
+.item button:hover{
+    background: rgb(172, 203, 167);
+    color: #000;
+}
+
+/* Private */
+.body-private{
+	max-width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+.title-private{
+    font-weight: 100; 
+    text-align: center;
+    font-size: 45px;
+    padding-top: 30px;
+}
+
+
+
+/* Combo */
+.body-combo{
+	max-width: 100%;
+	height: 100%;
+	background-image: url(/assets/img/bg2.jpeg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;	
+}
+
+.title-combo{
+    font-weight: 100; 
+    text-align: center;
+    font-size: 45px;
+    padding-top: 30px;
+}
+
+/* Footer */
+.footer{
+    display:flex;
+    margin:0;
+    padding:0;
+     height:60px;
+     background:#3B4947;
+ }
+ 
+ 
+ .copy-right{
+     font-size: 18px;
+     color: #fff;
+     font-family: Arial, Helvetica, sans-serif;
+     padding: 20px 0 0 20px;
+ }
+ 
+ .social {
+     font-size: 18px;
+     padding: 20px 0 0 68% ;
+ }
+ 
+ .footer a{
+     color: #fff;
+     text-decoration: none;
+     padding: 20px;
+ }
+ 
+ .footer a:hover {
+     color: rgb(172, 203, 167);
+ }
